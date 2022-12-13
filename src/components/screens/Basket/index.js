@@ -1,20 +1,9 @@
 import { View, Text, StyleSheet, Pressable, FlatList } from "react-native";
 import React from "react";
 import restaurants from "../../../../assets/data/restaurants.json";
+import BasketDetailsItems from "../../BasketDishItem";
 
 const restaurant = restaurants[2];
-
-const BasketDetailsItems = ({ basketDish }) => {
-  return (
-    <View style={styles.row}>
-      <View style={styles.quantityContainer}>
-        <Text>1</Text>
-      </View>
-      <Text style={{ fontWeight: "600" }}>{basketDish.name}</Text>
-      <Text style={{ marginLeft: "auto" }}>${basketDish.price}</Text>
-    </View>
-  );
-};
 
 const Basket = () => {
   return (
