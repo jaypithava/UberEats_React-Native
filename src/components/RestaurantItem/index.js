@@ -1,11 +1,17 @@
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
+import {useNavigation} from '@react-navigation/native'
 
 const DEFAULT_IMAGE =
   "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
-const onPress = () => {};
 
 const RestaurantItem = ({ restaurant }) => {
+  const navigation = useNavigation();
+
+  const onPress = () => {
+    navigation.navigate("Restaurant", {id: restaurant.id});
+  };
+
   return (
     <Pressable onPress={onPress} style={styles.restaurantContainer}>
       <Image

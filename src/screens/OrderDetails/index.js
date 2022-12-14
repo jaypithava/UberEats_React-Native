@@ -1,9 +1,9 @@
 import { FlatList, Image, Text, View } from "react-native";
 import React from "react";
-import orders from "../../../../assets/data/orders.json";
-import restaurant from "../../../../assets/data/restaurants.json";
+import orders from "../../../assets/data/orders.json";
+import restaurant from "../../../assets/data/restaurants.json";
 import styles from "./styles";
-import BasketDetailsItems from "../../BasketDishItem";
+import BasketDetailsItems from "../../components/BasketDishItem";
 
 const order = orders[0];
 
