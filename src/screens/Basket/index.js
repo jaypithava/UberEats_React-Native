@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Pressable, FlatList } from "react-native";
 import React from "react";
-import restaurants from "../../../../assets/data/restaurants.json";
-import BasketDetailsItems from "../../BasketDishItem";
+import restaurants from "../../../assets/data/restaurants.json";
+import BasketDetailsItems from "../../components/BasketDishItem";
 
 const restaurant = restaurants[2];
 

@@ -7,13 +7,12 @@ import { Ionicons } from "@expo/vector-icons";
 import styles from "./styles";
 import { useRoute, useNavigation } from "@react-navigation/native"; 
 
-const restaurant = restaurants[1];
-
 const RestaurantDetailsPage = () => {
   const navigation = useNavigation();
   const route = useRoute();
 
   const id = route.params.id;
+  const restaurant = restaurants[1];
 
   return (
     <View style={styles.page}>
